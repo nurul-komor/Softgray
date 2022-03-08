@@ -4,7 +4,7 @@
 Project:    Project Name
 Version:    1.0
 Last change:    24/03/17 [fixed Float bug, vf]
-Author Name: Author Name
+Author Name: Nurul Komor
 Primary use:    Project Type
 -------------------------------------------------------------------*/
 
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .container {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .menu-btn,
@@ -405,6 +405,12 @@ header p {
     text-transform: uppercase;
     display: inline-block;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .light-dark-section .mac-section a {
+        padding: 10px 30px;
+    }
 }
 
 
