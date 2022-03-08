@@ -163,6 +163,24 @@ a:hover {
     z-index: 20;
 }
 
+
+/* need to fix left to right scrolling */
+
+* {
+    /* border-bottom: 1px solid red; */
+}
+
+html {
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+}
+
+@media screen {
+    .nav {
+        /* overflow-x: hidden; */
+    }
+}
+
 .nav .overflow {
     overflow: hidden;
 }
@@ -309,6 +327,9 @@ a:hover {
 header {
     padding: 118px 0;
     background: #484848;
+    background: url(../img/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
     /* min-height: 100vh; */
 }
 
@@ -324,7 +345,7 @@ header h1 {
 }
 
 header p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -407,6 +428,10 @@ header p {
     border-radius: 5px;
 }
 
+.light-dark-section .mac-section .mac-screen {
+    position: relative;
+}
+
 @media screen and (max-width: 500px) {
     .light-dark-section .mac-section a {
         padding: 10px 30px;
@@ -429,6 +454,24 @@ header p {
     background: #fff;
     min-height: 278px;
     position: relative;
+}
+
+.hover .hover-section.one {
+    background-image: url(../img/news-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hover .hover-section.two {
+    background-image: url(../img/news-3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hover .hover-section.three {
+    background-image: url(../img/news-1.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
 .hover .hover-section::before {
@@ -563,6 +606,24 @@ header p {
     background: #666;
 }
 
+.news .news-section .news-bg.one {
+    background-image: url(../img/news-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.news .news-section .news-bg.two {
+    background-image: url(../img/news-3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.news .news-section .news-bg.three {
+    background-image: url(../img/news-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 .news .news-section .news-bg>span {
     position: absolute;
     bottom: 0;
@@ -630,6 +691,12 @@ a:hover {
 @media (max-width: 577px) {
     .footer-left {
         padding-left: 22px;
+    }
+}
+
+@media (max-width: 577px) {
+    .footer-middle {
+        margin-left: 22px;
     }
 }
 
